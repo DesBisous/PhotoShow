@@ -1,0 +1,243 @@
+/*StoryPlate*/
+.StoryPlate .container{
+    padding: 0;
+}
+.StoryPlate {
+    background: rgb(242, 234, 218);
+}
+/*LeftPlat/RightPlate*/
+.StoryPlate .RightPlate{
+    padding-left: 0;
+}
+.StoryPlate .LeftPlate{
+}
+.StoryPlate .LeftPlate .htmleaf-container{
+    margin-top: 80px;
+}
+.StoryPlate .LeftPlate .weather-h1>h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1;
+    margin-bottom: 0;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+    vertical-align: baseline;
+}
+.StoryPlate .LeftPlate .weather-h1{
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*middle1*/
+
+.StoryPlate .middle1 .middle1_head{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2a5caa;
+    padding-bottom: 10px;
+}
+.StoryPlate .middle1 .middle1_head>h1{
+    font-weight: bolder;
+    display: inline;
+}
+.StoryPlate .middle1 .middle1_head>div{
+    display: inline-block;
+}
+.StoryPlate .middle1 .middle1_head>div>p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 269px;
+    overflow: hidden;
+    margin: 0 0 0 20px;;
+}
+.StoryPlate .middle1 .middle1_head .Genghuan{
+    float: right;
+    font-weight: bold;
+}
+.StoryPlate .middle1 .middle1_head .Genghuan a:hover{
+    text-decoration: none;
+}
+.StoryPlate .middle1 .middle1_img1{
+    padding-left: 0;
+    padding-right: 0;
+}
+.StoryPlate .middle1 .col-lg-3 img{
+    width: 100%;
+}
+.StoryPlate .middle1 .col-lg-3 .thumbnail{
+    max-height: 518px;
+}
+.StoryPlate .middle1 .col-lg-3 .thumbnail>img{
+    width: 100%;
+    height: 260px;
+}
+
+/*RightPlate_media*/
+.StoryPlate .RightPlate_media{
+    margin-bottom: 106px;
+}
+.StoryPlate .RightPlate_media .media-object{
+    width: 300px;
+    height: 450px;
+    opacity: 0.9;
+}
+.StoryPlate .RightPlate_media>h1{
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.StoryPlate .RightPlate_media .media{
+    max-height: 450px;
+}
+.StoryPlate .RightPlate_media .media .media-body{
+    font-weight: bold;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 450px;
+}
+.StoryPlate .RightPlate_media .media .media-heading{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.StoryPlate .RightPlate_media .media .media-p>p{
+    text-indent:2em ;
+    line-height: 2.42857143;
+    font-size: 1.2em;
+    min-height: 370px;
+}
+.StoryPlate .RightPlate_media .media .media-info{
+
+    text-align: right;
+    
+}
+/*Theme*/
+.StoryPlate .Theme .Theme-Title{
+    font-family: 'Nunito-Bold';
+    font-size: 1.8em;
+    text-align: center;
+}
+.StoryPlate .Theme .Theme-body .Theme-img{
+    margin: 20px 0px;
+    background-color: #3C3C3C;
+}
+.StoryPlate .Theme .Theme-body .Theme-img .Theme-imgin img{
+    width: 100%;
+    height: 100%;
+}
+.StoryPlate .Theme .Theme-body .Theme-img .Theme-imgin .Theme-img-p{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:  100%!important;
+    height: 100%!important;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+}
+.StoryPlate .Theme .Theme-body .col-lg-8 .Theme-img .Theme-imgin .Theme-img-p p{
+    margin-top: 22%;
+}
+.StoryPlate .Theme .Theme-body .col-lg-4 .Theme-img .Theme-imgin .Theme-img-p p{
+    margin-top: 40%;
+}
+.StoryPlate .Theme .Theme-body .col-lg-12 .Theme-img .Theme-imgin .Theme-img-p p{
+    margin-top: 12%;
+}
+.StoryPlate .Theme .Theme-body .col-lg-8 .Theme-img .Theme-imgin{
+    overflow:hidden;
+}
+.StoryPlate .Theme .Theme-body .col-lg-8 .Theme-img .Theme-imgin .Theme-info1{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    /*left: -38.5%;*/
+    width: 0px;
+    background-color: #FFF;
+    /*border-left: 15px solid #2fa0ec;*/
+    /*padding: 2px 45px;*/
+    opacity: 0.85;
+    margin-top: 33%;
+    border-radius: 2px;
+    z-index: -1;
+    -webkit-transition: all 0.5s,-webkit-transform 0.5s;
+    -moz-transition: all 0.5s, -moz-transform 0.5s;
+    -o-transition: all 0.5s, -o-transform 0.5s;
+    -ms-transition: all 0.5s, -ms-transform 0.5s;
+    transition: all 0.5s, transform 0.5s;
+}
+.StoryPlate .Theme .Theme-body .col-lg-4 .Theme-img .Theme-imgin .Theme-info1{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    /*left: -38.5%;*/
+    width: 0px;
+    background-color: #FFF;
+    /*border-left: 15px solid #2fa0ec;*/
+    /*padding: 2px 45px;*/
+    opacity: 0.85;
+    margin-top: 65.5%;
+    border-radius: 2px;
+    z-index: -1;
+    -webkit-transition: all 0.5s,-webkit-transform 0.5s;
+    -moz-transition: all 0.5s, -moz-transform 0.5s;
+    -o-transition: all 0.5s, -o-transform 0.5s;
+    -ms-transition: all 0.5s, -ms-transform 0.5s;
+    transition: all 0.5s, transform 0.5s;
+}
+.StoryPlate .Theme .Theme-body .col-lg-12 .Theme-img .Theme-imgin .Theme-info1{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    /*left: -38.5%;*/
+    width: 0px;
+    background-color: #FFF;
+    /*border-left: 15px solid #2fa0ec;*/
+    /*padding: 2px 45px;*/
+    opacity: 0.85;
+    margin-top: 21%;
+    border-radius: 2px;
+    z-index: -1;
+    -webkit-transition: all 0.5s,-webkit-transform 0.5s;
+    -moz-transition: all 0.5s, -moz-transform 0.5s;
+    -o-transition: all 0.5s, -o-transform 0.5s;
+    -ms-transition: all 0.5s, -ms-transform 0.5s;
+    transition: all 0.5s, transform 0.5s;
+}
+.StoryPlate .Theme .Theme-body .Theme-img .Theme-imgin .Theme-info1 p{
+    margin: 0 0 0px;
+    font-weight: bold;
+    width: 0px;
+    overflow:hidden;
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+.StoryPlate .Theme .Theme-body  .Theme-img .Theme-imgin .Theme-aide{
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    width: 97%;
+    height: 92%;
+    z-index: 10;
+}
+@media(max-width:580px){
+    .StoryPlate .middle1 .middle1_head>h1{
+        font-weight: bolder;
+        display: block;
+    }
+}
+@media(max-width:360px){
+    .StoryPlate .middle1 .middle1_head .middle1_headInfo{
+        display: block;
+    }
+    .StoryPlate .middle1 .middle1_head .Genghuan{
+        float: none;
+        margin-top: 8px;
+        margin-left: 20px;
+    }
+}

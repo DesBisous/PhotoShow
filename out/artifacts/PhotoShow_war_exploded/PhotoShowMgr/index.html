@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>PhotoShowMgr</title>
+
+  <!--common-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/sweetalert.css" rel="stylesheet">
+
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="index.html"><img src="images/login-logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#"></a></h4>
+                        <span>"您好~"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>主页</span></a></li>
+                <li><a href="userMgt.html"><i class="fa fa-book"></i> <span>用户管理</span></a></li>
+                <li class="menu-list"><a href="#"><i class="fa fa-laptop"></i> <span>网站Graph</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="modifyGraph.html"> 更新网站主图</a></li>
+                        <li><a href="modifyDaren.html"> 更新HomeDaren</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="#"><i class="fa fa-laptop"></i> <span>管理FAQ</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="proposal.html"> 处理Proposal</a></li>
+                        <li><a href="comments.html"> 处理Comments</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="#"><i class="fa fa-laptop"></i> <span>管理员信息</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="person.html"> 个人信息</a></li>
+                        <li><a href="modifyInformation.html"> 修改信息</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> <span>Login Page</span></a></li>
+            </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+    
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+            <!--toggle button start-->
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+            <!--toggle button end-->
+
+            <!--search end-->
+
+            <!--notification menu start -->
+            <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="proposal.html" class="btn btn-default  info-number" >
+                            <i class="fa fa-bell-o"></i>
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="btn btn-default  info-number" >
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <img src="" alt="" />
+                            <span></span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="person.html"><i class="fa fa-user"></i>  个人信息</a></li>
+                            <li><a href="modifyInformation.html"><i class="fa fa-cog"></i>  修改信息</a></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out"></i> 登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                主页
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="active"> My Home </li>
+            </ul>
+            <div class="state-info">
+                <section class="panel">
+                    <div class="panel-body">
+                        <div class="summary">
+                            <span>用户总数</span>
+                            <h3 class="red-txt allUser"></h3>
+                        </div>
+                        <div id="income" class="chart-bar"></div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="panel-body">
+                        <div class="summary">
+                            <span>在线人数</span>
+                            <h3 class="green-txt online"></h3>
+                        </div>
+                        <div id="expense" class="chart-bar"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--statistics start-->
+                    <div class="row state-overview">
+                        <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="panel purple">
+                                <div class="symbol">
+                                    <i class="fa fa-camera"></i>
+                                </div>
+                                <div class="state-value">
+                                    <div class="value tour"></div>
+                                    <div class="title">旅游</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="panel red">
+                                <div class="symbol">
+                                    <i class="fa fa-tags"></i>
+                                </div>
+                                <div class="state-value">
+                                    <div class="value life"></div>
+                                    <div class="title">生活</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row state-overview">
+                        <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="panel blue">
+                                <div class="symbol">
+                                    <i class="fa fa-leaf"></i>
+                                </div>
+                                <div class="state-value">
+                                    <div class="value natural"></div>
+                                    <div class="title">自然</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="panel green">
+                                <div class="symbol">
+                                    <i class="fa fa-gavel"></i>
+                                </div>
+                                <div class="state-value">
+                                    <div class="value camp"></div>
+                                    <div class="title"> 野营</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row state-overview">
+                        <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="panel pink">
+                                <div class="symbol">
+                                    <i class="fa fa-cutlery"></i>
+                                </div>
+                                <div class="state-value">
+                                    <div class="value party"></div>
+                                    <div class="title"> 聚会</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="panel golden">
+                                <div class="symbol">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <div class="state-value">
+                                    <div class="value other"></div>
+                                    <div class="title"> 其他</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--statistics end-->
+                </div>
+                <div class="col-md-6">
+                    <!--more statistics box start-->
+                    <div class="panel deep-purple-box">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7 col-xs-7">
+                                    <div id="graph-donut" class="revenue-graph"></div>
+
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                    <ul class="bar-legend">
+                                        <li><span class="blue"></span> 亚洲</li>
+                                        <li><span class="green"></span> 欧洲</li>
+                                        <li><span class="purple"></span> 美洲</li>
+                                        <li><span class="red"></span> 澳大利亚</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel deep-purple-box">
+                        <div class="panel green-box">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="knob">
+                                        <span class="chart" data-percent="75">
+                                            <span class="percent"><span></span> <span class="sm">明确主题相册</span></span>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="knob">
+                                        <span class="chart" data-percent="25">
+                                            <span class="percent"><span></span> <span class="sm">其他主题相册</span></span>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--more statistics box end-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="media usr-info">
+                                <a href="#" class="pull-left">
+                                    <img class="thumb is-img1" src="" alt=""/>
+                                    <ul class="user-states">
+                                        <li>
+                                            <i class="fa fa-heart is-good1"></i>
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="media-body is-album1">
+                                    <h4 class="media-heading"></h4>
+                                    <span></span>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="media usr-info">
+                                <a href="#" class="pull-left">
+                                    <img class="thumb is-img2" src="" alt=""/>
+                                    <ul class="user-states">
+                                        <li>
+                                            <i class="fa fa-heart is-good2"></i>
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="media-body is-album2">
+                                    <h4 class="media-heading"></h4>
+                                    <span></span>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="media usr-info">
+                                <a href="#" class="pull-left">
+                                    <img class="thumb is-img3" src="" alt=""/>
+                                    <ul class="user-states">
+                                        <li>
+                                            <i class="fa fa-heart is-good3"></i>
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="media-body is-album3">
+                                    <h4 class="media-heading"></h4>
+                                    <span></span>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel">
+                        <header class="panel-heading">
+                            最佳用户
+                            <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                <a href="javascript:;" class="fa fa-times"></a>
+                             </span>
+                        </header>
+                        <div class="panel-body">
+                            <ul class="goal-progress betterUser">
+
+                            </ul>
+                            <div class="text-center"><a href="#">相册数量排名</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel">
+                        <header class="panel-heading">
+                            管理者
+                            <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                <a href="javascript:;" class="fa fa-times"></a>
+                             </span>
+                        </header>
+                        <div class="panel-body">
+                            <ul class="goal-progress">
+
+                            </ul>
+                            <div class="text-center"><a href="#">管理员简介</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+
+
+    </div>
+    <!-- main content end-->
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/Top.js"></script>
+<script src="js/adminHome.js"></script>
+
+
+<!--easy pie chart-->
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<script src="js/easypiechart/easypiechart-init.js"></script>
+
+
+<!--Morris Chart-->
+<script src="js/morris-chart/morris.js"></script>
+<script src="js/morris-chart/raphael-min.js"></script>
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+
+<!--Dashboard Charts-->
+<script src="js/dashboard-chart-init.js"></script>
+
+
+</body>
+</html>

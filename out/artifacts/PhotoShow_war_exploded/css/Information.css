@@ -1,0 +1,23 @@
+.Photo .Upload-right .Modify-Password{
+    border-top: 1px solid #E5E5E5;
+}
+.Photo .Upload-right .Upload-right-form .form-group #Error1{
+    color: red;
+    font-size: 1em;
+    margin-left: 15px;
+}
+.Photo .Upload-right .Upload-right-form .form-group #Error2{
+    color: red;
+    font-size: 1em;
+    margin-left: 15px;
+}
+.Photo .Upload-right .Upload-right-form .form-group #form-Sign1{
+    background: rgb(241,158,194);
+    width: 15%;
+    font-weight: bold;
+}
+.Photo .Upload-right .Upload-right-form .form-group #form-Sign2{
+    background: rgb(241,158,194);
+    width: 15%;
+    font-weight: bold;
+}

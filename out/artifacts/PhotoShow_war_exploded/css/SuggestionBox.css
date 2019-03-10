@@ -1,0 +1,71 @@
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top{
+    background: #FFF;
+    border-radius: 5px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top .panel-sug-envelope{
+    text-align: center;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top .panel-sug-envelope>i{
+    border: 1px solid #E5E5E5;
+    background: rgb(241,158,194);
+    border-radius: 50px;
+    padding: 20px;;
+    color: #FFF;
+    margin-top: 20px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top .panel-sug_info{
+    font-family: "Nunito-Bold";
+    text-indent:2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top .panel-sug_info .panel-sug_infoSpan{
+    text-align: center;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top .panel-sug_info span{
+    font-size: 36px;
+    color: rgb(241,158,194);
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top .panel-sug_info strong{
+    color: rgb(241,158,194);
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-left .panel-group .panel-sug-top .panel-sug_info p{
+        color: #666;
+        font-weight: 500;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body{
+    font-family: "Nunito-Bold";
+    font-weight: 500;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body .field_form{
+    font-size: 1.6em;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body .sug-ul{
+    padding-left:50px;
+    padding-right: 100px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body ul li .feedback_radio_lab{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body ul li.sug-form{
+    margin-left: -50px;
+    margin-top: 30px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body ul li.sug-form .form-group{
+    margin-bottom: 30px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body ul li.sug-form #inputTitle1{
+    width: 50%;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body ul li #form-Sign{
+    background: rgb(241,158,194);
+    width: 15%;
+    font-weight: bold;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body #feedbackError1{
+    color: red;
+    font-size: 1em;
+    margin-left: 15px;
+}

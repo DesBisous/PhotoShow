@@ -1,0 +1,331 @@
+header{
+    font-family: 'Nunito-Bold';
+    border-bottom: 5px solid #fc5700;
+}
+/*顶部导航1*/
+header .search{
+  display: inline-block;
+}
+
+.navbar>.container .navbar-brand{
+  margin-left: 0;
+}
+.navbar>.container .navbar-brand .navbar-brand-logo{
+    width: 115px;
+    height: 52px;
+}
+.navbar>.container .navbar-brand .navbar-brand-logo>img{
+  width: 100%
+}
+.tor-bar{
+    padding: 10px 0;
+    background: #191919;
+    border-bottom: 1px solid #222;
+    line-height: 28px;
+}
+.top-number{
+    color: #fff;
+}
+.top-number p{
+    margin: 0
+}
+.top-number>p>a{
+    color: #fff;
+    font-size: 2em;
+     transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+
+}
+.top-number>p>a:hover{
+    text-decoration: none;
+    color: #ff0;
+}
+.social{
+    text-align: right;
+}
+.social-share{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.social-share li {
+  display: inline-block;
+}
+
+ul.social-share li a {
+  display: inline-block;
+  color: #fff;
+  background: #404040;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+ul.social-share li a.login,
+ul.social-share li a.register,
+ul.social-share li a.Mycolse{
+  display: inline-block;
+  color: #fff;
+  background: #404040;
+  width: auto;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+}
+ul.social-share li a.login,
+ul.social-share li a.register,
+ul.social-share li a.Mycolse{
+    text-decoration:none;
+}
+
+ul.social-share li a:hover {
+  background: #c52d2f;
+  color: #fff;
+  text-decoration:none;
+}
+.search i {
+  color: #fff;
+}
+.search:hover .search-form{
+  width: 180px;
+}
+input.search-form{
+  background: transparent;
+  border: 0 none;
+  width: 60px;
+  padding: 0 10px;
+  color: #FFF;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+
+input.search-form::-webkit-input-placeholder{
+  color: transparent;
+}
+
+input.search-form:hover::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input.search-form:hover {
+  width: 180px;
+}
+
+/*顶部导航2*/
+#navbar2 .container .navbar-header .navbar-brand {
+  padding: 0;
+  margin:0;
+  margin-left: 0;
+}
+#navbar2 {
+  border-radius: 0;
+  margin-bottom: 0;
+/*  background-color: #B23AEE;*/
+/*  background-color: #412f1f;*/
+  background-color: #151515;
+  padding: 15px 0;
+  padding-bottom: 0;
+}
+
+ #navbar2 .container .navbar-nav{
+  margin-top: 12px;
+ }
+
+.navbar-nav>li{
+  margin-left: 35px;
+  padding-bottom: 28px;
+}
+
+#navbar2 .navbar-nav > li > a {
+  padding: 5px 12px;
+  margin: 0;
+  border-radius: 3px;
+  color: #fff;
+  line-height: 24px;
+  display: inline-block;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+#navbar2 .navbar-nav > li > a:hover{
+  background-color: #c52d2f;
+  color: #fff;
+}
+
+#navbar2 {
+  border: none;
+}
+
+#navbar2 .navbar-brand {
+  font-size: 36px;
+  line-height: 50px;
+  color: #fff;
+}
+
+#navbar2 .navbar-nav > .active > a,
+#navbar2 .navbar-nav > .active > a:hover,
+#navbar2 .navbar-nav > .active > a:focus,
+#navbar2 .navbar-nav > .open > a,
+#navbar2 .navbar-nav > .open > a:hover,
+#navbar2 .navbar-nav > .open > a:focus {
+  background-color: #c52d2f;
+  color: #fff;
+}
+
+#navbar2 .navbar-nav .dropdown-menu {
+  background-color: rgba(0,0,0,.85);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+  border: 0;
+  padding: 0;
+  margin-top: 0;
+  border-top: 0;
+  border-radius: 0;
+  left: 0;
+}
+
+#navbar2 .navbar-nav .dropdown-menu:before{
+  position: absolute;
+  top:0;
+}
+
+#navbar2 .navbar-nav .dropdown-menu > li > a {
+  padding: 8px 15px;
+  color: #fff;
+}
+
+#navbar2 .navbar-nav .dropdown-menu > li:hover > a,
+#navbar2 .navbar-nav .dropdown-menu > li:focus > a,
+#navbar2 .navbar-nav .dropdown-menu > li.active > a {
+  background-color: #c52d2f;
+  color: #fff;
+}
+
+#navbar2 .navbar-nav .dropdown-menu > li:last-child > a {
+  border-radius: 0 0 3px 3px;
+}
+
+#navbar2 .navbar-nav .dropdown-menu > li.divider {
+  background-color: transparent;
+}
+
+#navbar2 .navbar-collapse,
+#navbar2 .navbar-form {
+  border-top: 0;
+  padding-bottom: 0;
+}
+/*--footer start here--*/
+.footer {
+    padding: 3em 0em;
+    background:#3C3C3C;
+    text-align: center;
+}
+.footer-main h3 {
+    font-size: 2.5em;
+    color:#FBA919;
+    margin-bottom: 0.4em;
+    font-family: 'Kreon', serif;
+    font-weight: bolder;
+}
+.footer-main p {
+    font-size: 1.4em;
+    color: #fff;
+    width: 35%;
+    margin: 0em auto 1.2em;
+    line-height: 1.8em;
+        font-family: '汉仪太极体简';
+}
+.footer-main input[type="text"] {
+    font-size: 1em;
+    color:#A0431B;
+    padding:0.6em 1em;
+    width: 28%;
+    margin: 0 auto 1em;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+   font-family: 'Kreon', serif;
+}
+.footer-main #WebSearch {
+    font-size: 1.1em;
+    color:#A0431B;
+    border: none;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+   font-family: 'Kreon', serif;
+}
+.footer-main #WebSearch:hover{
+	color:#fba919;
+}
+/*--footer end here--*/
+/*--copyrights strat here--*/
+.copy-rights {
+    text-align: center;
+    background:#fba919;
+    margin: 0;
+    padding: 0.8em 0;
+}
+.copy-rights-main p {
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+}
+.copy-rights-main p a {
+    color:#A0431B;
+}
+.copy-rights-main p a:hover {
+    color: #fff;
+    text-decoration:none;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+/*
+overflow: hidden;
+在设置了 width 或 height 的div中，写上overflow:hidden;的话，超出宽度或高度的部分，就隐藏了。
+就是说，这个overflow:hidden;属性可以保证div的高度或宽度不变。
+div里添加的东西再多，高度或宽度也不变。超出的部分隐藏。 
+另外它还有这清除浮动的功能，就像<div class="clearfix"></div>
+*/
+	width: 48px;
+	height: 38px;
+	border: none;
+	text-indent: 100%;
+/*
+text-indent段落的第一行缩进，
+100%直接该段落的第一个字符直接放在了一行的最右段
+*/
+	background: url("../images/index/to-top2.png") no-repeat 0px 0px;
+}
+/*--copyrights end here--*/
+@media(max-width:991px){
+    .social-share{
+        display: block;
+    }
+}
+@media(max-width:480px){
+    .search:hover .search-form{
+        width: 120px;
+    }
+}

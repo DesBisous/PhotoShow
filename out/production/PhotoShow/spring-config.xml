@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                        http://www.springframework.org/schema/beans/spring-beans.xsd
+	                        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+	                        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+    <!-- 定义数据源的信息 proxool比较稳定-->
+    <bean id="dataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+        <property name="driver">
+            <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property name="driverUrl">
+            <value>jdbc:mysql://localhost:3306/photoshow?characterEncoding=UTF-8</value>
+        </property>
+        <property name="user" value="root" />
+        <property name="password" value="root" />
+        <property name="maximumConnectionCount" value="50" />
+        <property name="minimumConnectionCount" value="1" />
+        <property name="maximumActiveTime" value="60" />
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--映射到hibernate.cfg.xml配置文件-->
+        <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
+        <!--当有多个的时候，可以用扫描包的方法-->
+        <property name="packagesToScan">
+            <list>
+                <value>com.beans</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/photoshow</prop>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+            </props>
+        </property>
+    </bean>
+    <!-- 配置事务管理器（声明式的事务） -->
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!-- 2.配置事务属性，需要事务管理器 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="purchase" propagation="REQUIRES_NEW"/>
+            <tx:method name="*" />
+        </tx:attributes>
+    </tx:advice>
+    <!-- 3.配置事务切点，并把切点和事务属性关联起来 -->
+    <aop:config>
+        <aop:pointcut expression="execution(* com.service.*.*(..))"
+                      id="txPointCut"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
+    </aop:config>
+
+
+
+    <!--配置Dao-->
+    <bean id="userDao" class="com.daoImpl.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="feedbackDao" class="com.daoImpl.FeedbackDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="SuggestionDao" class="com.daoImpl.SuggestionDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="MyServiceRecordDao" class="com.daoImpl.MyServiceRecordDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="memberDao" class="com.daoImpl.MemberDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="uploadDao" class="com.daoImpl.UploadDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="homeDao" class="com.daoImpl.HomeDaoImpl">
+        <property name="sessionFactory"  ref="sessionFactory"/>
+    </bean>
+    <bean id="adminDao" class="com.daoImpl.AdminDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="darenDao" class="com.daoImpl.DarenDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="proposalDao" class="com.daoImpl.proposalDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="commentsDao" class="com.daoImpl.CommentsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="adminHomeDao" class="com.daoImpl.AdminHomeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="adminUserDao" class="com.daoImpl.AdminUserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+    <!--配置Service -->
+    <bean id="userManager" class="com.serviceImpl.UserManagerImpl">
+        <property name="userDao" ref="userDao" />
+    </bean>
+    <bean id="serviceCentre" class="com.serviceImpl.ServiceCentreImpl">
+        <property name="feedbackDaoImpl" ref="feedbackDao"/>
+        <property name="suggestionDaoImpl" ref="SuggestionDao"/>
+        <property name="MyServiceRecordDaoImpl" ref="MyServiceRecordDao"/>
+    </bean>
+    <bean id="albumService" class="com.serviceImpl.AlbumServiceImpl">
+        <property name="memberDao" ref="memberDao"/>
+    </bean>
+    <bean id="uploadManager" class="com.serviceImpl.UploadManagerImpl">
+        <property name="uploadDao" ref="uploadDao" />
+    </bean>
+    <bean id="homeManager" class="com.serviceImpl.HomeManagerImpl">
+        <property name="homeDao" ref="homeDao"/>
+    </bean>
+    <bean id="adminManager" class="com.serviceImpl.AdminManagerImpl">
+        <property name="adminDao" ref="adminDao"/>
+        <property name="darenDao" ref="darenDao"/>
+        <property name="proposalDao" ref="proposalDao"/>
+        <property name="commentsDao" ref="commentsDao"/>
+        <property name="memberDao" ref="memberDao"/>
+        <property name="suggestionDao" ref="SuggestionDao"/>
+    </bean>
+    <bean id="adminHomeManager" class="com.serviceImpl.AdminHomeManagerImpl">
+        <property name="adminHomeDao" ref="adminHomeDao"/>
+    </bean>
+    <bean id="adminUserManager" class="com.serviceImpl.AdminUserManagerImpl">
+        <property name="adminUserDao" ref="adminUserDao"/>
+    </bean>
+
+
+    <!-- 配置Action -->
+    <bean id="userAction" class="com.action.UserAction" scope="prototype">
+        <property name="userManager" ref="userManager" />
+    </bean>
+    <bean id="uploadAction" class="com.action.UploadAction" scope="prototype">
+        <property name="uploadManager" ref="uploadManager"/>
+    </bean>
+    <bean id="feedback" class="com.action.FeedbackAction" scope="prototype">
+        <property name="ServiceCentre" ref="serviceCentre"/>
+    </bean>
+    <bean id="SuggestionBox" class="com.action.SuggestionBoxAction" scope="prototype">
+        <property name="serviceCentre" ref="serviceCentre" />
+    </bean>
+    <bean id="MyServiceRecord" class="com.action.MyServiceRecordAction" scope="prototype">
+        <property name="serviceCentre" ref="serviceCentre" />
+        <property name="userManager" ref="userManager" />
+    </bean>
+    <bean id="SearchAction" class="com.action.SearchAction" scope="prototype">
+        <property name="albumService" ref="albumService"/>
+        <property name="userManager" ref="userManager" />
+    </bean>
+    <bean id="galleryAction" class="com.action.GalleryAction" scope="prototype">
+        <property name="albumService" ref="albumService"/>
+    </bean>
+    <bean id="personalAlbumAction" class="com.action.PersonalAlbumAction" scope="prototype">
+        <property name="albumService" ref="albumService"/>
+        <property name="userManager" ref="userManager" />
+        <property name="uploadManager" ref="uploadManager"/>
+    </bean>
+    <bean id="homeAction" class="com.action.HomeAction" scope="prototype">
+        <property name="homeManager" ref="homeManager"/>
+        <property name="uploadManager" ref="uploadManager"/>
+        <property name="userManager" ref="userManager"/>
+    </bean>
+    <bean id="adminAction" class="com.action.AdminAction" scope="prototype">
+        <property name="adminManager" ref="adminManager"/>
+    </bean>
+    <bean id="graphAction" class="com.action.GraphAction" scope="prototype">
+        <property name="adminManager" ref="adminManager"/>
+    </bean>
+    <bean id="proposalAction" class="com.action.ProposalAction" scope="prototype">
+        <property name="adminManager" ref="adminManager"/>
+    </bean>
+    <bean id="commentsAction" class="com.action.CommentsAction" scope="prototype">
+        <property name="adminManager" ref="adminManager"/>
+        <property name="userManager" ref="userManager"/>
+    </bean>
+    <bean id="modifyThemeAction" class="com.action.ModifyThemeAction" scope="prototype">
+        <property name="userManager" ref="userManager"/>
+    </bean>
+    <bean id="adminHomeAction" class="com.action.AdminHomeAction" scope="prototype">
+        <property name="userManager" ref="userManager"/>
+        <property name="adminHomeManager" ref="adminHomeManager"/>
+        <property name="albumService" ref="albumService"/>
+    </bean>
+    <bean id="adminUserAction" class="com.action.AdminUserAction" scope="prototype">
+        <property name="adminUserManager" ref="adminUserManager"/>
+        <property name="albumService" ref="albumService"/>
+    </bean>
+
+</beans>

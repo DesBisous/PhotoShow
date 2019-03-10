@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>PhotoShowMgr</title>
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/sweetalert.css" rel="stylesheet">
+
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+
+
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="index.html"><img src="images/login-logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#"></a></h4>
+                        <span>"您好~"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> <span>主页</span></a></li>
+                <li class="active"><a href="userMgt.html"><i class="fa fa-book"></i> <span>用户管理</span></a></li>
+                <li class="menu-list"><a href="#"><i class="fa fa-laptop"></i> <span>网站Graph</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="modifyGraph.html"> 更新网站主图</a></li>
+                        <li><a href="modifyDaren.html"> 更新HomeDaren</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="#"><i class="fa fa-laptop"></i> <span>管理FAQ</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="proposal.html"> 处理Proposal</a></li>
+                        <li><a href="comments.html"> 处理Comments</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="#"><i class="fa fa-laptop"></i> <span>管理员信息</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="person.html"> 个人信息</a></li>
+                        <li><a href="modifyInformation.html"> 修改信息</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> <span>Login Page</span></a></li>
+            </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+    
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+        <!--toggle button start-->
+        <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+        <!--toggle button end-->
+
+        <!--notification menu start -->
+        <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="proposal.html" class="btn btn-default  info-number" >
+                            <i class="fa fa-bell-o"></i>
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="btn btn-default  info-number" >
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <img src="" alt="" />
+                            <span></span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="person.html"><i class="fa fa-user"></i>  个人信息</a></li>
+                            <li><a href="modifyInformation.html"><i class="fa fa-cog"></i>  修改信息</a></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out"></i> 登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                用户管理
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">User</a>
+                </li>
+                <li>
+                    <a href="#">Management</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            User Table
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                        </header>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control find" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary findBtn" type="button">搜索</button>
+                                    </span>
+                                    </div><!-- /input-group -->
+                                </div><!-- /.col-lg-6 -->
+                            </div><!-- /.row -->
+                            <table class="table  table-hover general-table">
+                                <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>头像</th>
+                                    <th>账号</th>
+                                    <th>用户名</th>
+                                    <th>联系电话</th>
+                                    <th>邮箱</th>
+                                    <th>相册数量</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody class="userTbody">
+                                    <!--put tbody value here-->
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <ul class="pagination">
+                                        <li><a href="#">«</a></li>
+                                        <li class="active"><a href="#" class="CurrentPage"></a></li>
+                                        <li><a href="#">»</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+
+    </div>
+    <!-- main content end-->
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/userMgt.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/Top.js"></script>
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

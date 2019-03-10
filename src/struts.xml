@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <constant name="struts.multipart.maxSize" value="50000000"/>
+    <package name="PhotoShow" extends="json-default" >
+        <action name="user_*_*" class="{1}" method="{2}">
+            <result name="register" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="login" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+
+            <result name="showInfo" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="updateInfo" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="updatePwd" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <!--admin-->
+        <action name="admin_*" class="adminAction" method="{1}">
+            <result name="login" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="register" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <!--adminHome-->
+        <action name="adminHome_*" class="adminHomeAction" method="{1}">
+            <result name="sortsOfAlbum" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="maxNumOrderBy" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="betterUser" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="twoTypeAlbum" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="online" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <!--adminUser-->
+        <action name="adminUser_*" class="adminUserAction" method="{1}">
+            <result name="userPage" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="findUser" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="toDeleteUser" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <!--upload-->
+        <action name="upload_*" class="uploadAction" method="{1}">
+            <result name="uploadImg" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="uploadInfo" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="uploadAlbum" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="fileUpload">
+                <param name="maximumSize">8388608</param>
+            </interceptor-ref>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--album-->
+        <action name="album_*" class="personalAlbumAction" method="{1}">
+            <result name="personalAlbumShow" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="showAnAlbum" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="anAlbumInfo" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="anPhotoAddress" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="input">/Fail.jsp</result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--session-->
+        <action name="session_*" class="com.action.SessionAction" method="{1}">
+            <result name="existSession" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="exitSession" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="input">/Fail.jsp</result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--客服中心-->
+        <action name="SC_*_*" class="{1}" method="{2}">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--搜索-->
+        <action name="Search_*" class="{1}">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--Gallery-->
+        <action name="Gallery_*" class="{1}">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--home-->
+        <action name="home_*" class="homeAction" method="{1}">
+            <result name="{1}" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--Graph-->
+        <action name="Graph_*" class="graphAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--Proposal-->
+        <action name="Proposal_*" class="proposalAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--Comments-->
+        <action name="Comments_*" class="commentsAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!--modifyThemeAction-->
+        <action name="Theme" class="modifyThemeAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+            <result name="error" type="json">
+                <param name="root">result</param>
+            </result>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+    </package>
+
+
+</struts>

@@ -1,0 +1,118 @@
+.FAQ a{
+    text-decoration: none;
+}
+.MyDiaplay{
+    display: none;
+}
+.FAQ .FAQ-body .FAQ-mid{
+    margin-top: 10px;
+    background: #fff;
+}
+.FAQ .FAQ-body .FAQ-mid .col-lg-3{
+    padding-left: 0;
+}
+.FAQ .FAQ-body .FAQ-mid .panel-love .panel-heading>strong{
+    font-size: 1.7em;
+    margin-left: 10px;
+}
+.FAQ .FAQ-body .FAQ-mid .panel-love .panel .panel-heading .accordion-toggle{
+    font-size: 1.4em;
+}
+.FAQ .FAQ-body .FAQ-mid .panel-love .panel .panel-heading .fa1{
+    float: right;
+    margin-top: 6px;
+    font-size: 1.3em;
+}
+.FAQ .FAQ-body .FAQ-mid .col-lg-9{
+    padding-left: 0;
+    padding-right: 0;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right{
+    background: #fff;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-right-top{
+    font-size: 1.13em;
+    margin-top: 13px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-right-top .breadcrumb{
+    margin-bottom: 0;
+    background: #fff;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-topdown{
+    margin-top: 17px;
+    margin-left: 8px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-topdown i{
+    font-size: 1.3em;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-topdown strong{
+        font-size: 2em;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body{
+    font-family: "Nunito-Bold";
+    font-weight: 500;
+    margin-top: 30px;
+    line-height: 26px;
+    color: #666;
+    height: 700px;
+    overflow:scroll; /*任何时候都强制显示滚动条*/
+    overflow:auto; /*需要的时候会出现滚动条*/
+    overflow-y:auto; /*控制Y方向的滚动条*/
+    overflow-x:auto; /*控制X方向的滚动条*/
+    border-bottom: 1px solid #E5E5E5;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-body p{
+    line-height: 26px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot{
+    margin-top: 30px;
+    padding-left: 30px;
+    font-family: "Nunito-Bold";
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot p{
+    color: #666;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot>button{
+    margin-right: 10px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot .UserBack {
+    margin-top: 15px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot .UserBack ul{
+    overflow: hidden;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    max-width: 700px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot .UserBack ul>li{
+    float: left;
+    width: 50%;
+    margin-bottom: 6px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot .UserBack ul>li .UserBack-label{
+
+    font-size: 14px;
+    cursor: pointer;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot .UserBack ul>li .UserBack-label .UserBack-radio{
+    margin-right: 5px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot .UserBack .UserBack-input-textarea{
+    margin-left: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+.FAQ .FAQ-body .FAQ-mid .FAQ-mid-right .FAQ-mid-foot .UserBack button{
+    margin-left: 25px;
+}
+#ErrorBack{
+    color: red;
+    font-size: 1em;
+    margin-left: 15px;
+}

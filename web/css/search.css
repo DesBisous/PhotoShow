@@ -1,0 +1,311 @@
+.header{
+    position: relative;
+    z-index: 2;
+}
+.search-body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #3C3C3C ;
+}
+.search-body .sear-content .container{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background: #FFF;
+    border-top: 5px solid #3C3C3C;
+    margin-top: -4em;
+    -webkit-box-shadow: 0px 56px 36px -60px #121D12;
+    -moz-box-shadow: 0px 56px 36px -60px #121D12;
+    -o-box-shadow: 0px 56px 36px -60px #121D12;
+}
+.search-body .sear-content .container{
+    background: #fff;
+    height: auto;
+    color: #666;
+    max-height: 1700px;
+    overflow:scroll; /*任何时候都强制显示滚动条*/
+    overflow:auto; /*需要的时候会出现滚动条*/
+    overflow-y:auto; /*控制Y方向的滚动条*/
+    overflow-x:auto; /*控制X方向的滚动条*/
+}
+.search-body .sear-content .container .sear-container{
+    margin: 60px;
+    color: #666;
+    font-family: "Nunito-Bold";
+    font-weight: 500;
+}
+.search-body .sear-content .container .sear-container .media-list{
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.search-body .sear-content .container .sear-container .media-body{
+    padding: 15px;
+    padding-top: 0;
+}
+.search-body .sear-content .container .sear-container .media-body>strong{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.search-body .sear-content .container .sear-container .media-body .CreateTime{
+    font-weight: 600;
+    float: right;
+}
+.search-body .sear-content .container .sear-container .media-body .CreateTime>strong{
+    font-size: 1.3em;
+}
+.search-body .sear-content .container .sear-container .media-body>span{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.search-body .sear-content .container .sear-container .media-body>i{
+    margin-left: 20px;
+}
+.search-body .sear-content .container .sear-container .media-body .media-heading{
+   margin-bottom: 15px;
+}
+.search-body .sear-content .container .sear-container .media-body .media-heading>a{
+    text-decoration: none;
+}
+.search-body .sear-content .container .sear-container .media-body .media-heading>a>h3{
+    font-weight: 700;
+    text-indent: 1em;
+    color: #f391a9;
+    margin-bottom: 0px;
+}
+.search-body .sear-content .container .sear-container .media-body .media-heading p{
+    text-align: right;
+    margin-bottom: 0px;
+    padding-right: 10px;
+}
+.search-body .sear-content .container .sear-container .media-body .media-heading p span{
+    font-weight:600;
+}
+.search-body .sear-content .container .sear-container .media-body .media-body-sug{
+    margin-top: 5px;
+    line-height: 1.8em;
+    min-height: 150px;
+}
+.search-body .sear-content .container .sear-container .media-body .media-body-sug>p{
+    text-indent: 1em;
+    font-size: 1.1em;
+}
+/*图片效果*/
+.search-body .sear-content .container .sear-container .media-left{
+    height: auto;
+}
+.search-body .sear-content .container .sear-container .media-left a{
+    height: auto;
+}
+.search-body .sear-content .container .sear-container .media-left .media-left-img{
+    width: 350px;
+    height: 300px;
+    background: #FFF;
+    display: block;
+    position: relative;
+        margin: auto 0;
+}
+.search-body .sear-content .sear-container .media-left .media-left-img:hover>img{
+    opacity: 0.6;
+}
+.search-body .sear-content .container .sear-container .media-left .media-left-img img{
+    width: 100%;
+    height: 100%;
+	-webkit-transition: opacity 0.8s,-webkit-transform 0.8s;	
+	-moz-transition: opacity 0.8s, -moz-transform 0.8s;
+	-o-transition: opacity 0.8s, -o-transform 0.8s;
+	-ms-transition: opacity 0.8s, -ms-transform 0.8s;
+	transition: opacity 0.8s, transform 0.8s;
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text h4{
+    padding-top: 25%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translate3d(0,-20px,0);
+    -moz-transform: translate3d(0,-20px,0);
+    -o-transform: translate3d(0,-20px,0);
+    -ms-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+    color: #fff;
+    font-family: "Nunito-Bold";
+    color: #FFF;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text p{
+    color: #fff;
+    padding: 0.5em 2.5em;
+    line-height: 1.5em;
+    opacity: 0;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translate3d(0,20px,0);
+    -moz-transform: translate3d(0,20px,0);
+    -o-transform: translate3d(0,20px,0);
+    -ms-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text::before,
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text::after{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';/*添加的内容为空*/
+	opacity: 1;
+	-webkit-transition: opacity 0.5s,-webkit-transform 0.5s;	
+	-moz-transition: opacity 0.5s, -moz-transform 0.5s;
+	-o-transition: opacity 0.5s, -o-transform 0.5s;
+	-ms-transition: opacity 0.5s, -ms-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+/*
+transition: opacity 0.5s, transform 0.5s;
+说明：在这里定义一个动画效果，当opacity和transform属性发生变化的时候，
+变化过程用0.5s来进行转变。
+就像这里用的一样，一开始opacity: 0;被隐藏，后面获取焦点的时候opacity: 1;显示。
+还有就是sacle（0，1）一开始x为0，获取焦点后scale(1)，x，y变成了1，
+放大过程用0.5s来演示
+*/
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text::before{
+    border-bottom: 1px #fff solid ;
+    border-top: 1px #fff solid ;
+    -webkit-transform: scale(0,1);
+    -moz-transform: scale(0,1); 
+    -o-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text::after{
+    border-left: 1px #fff solid ;
+    border-right: 1px #fff solid ;
+    -webkit-transform: scale(1,0);
+    -moz-transform: scale(1,0); 
+    -o-transform: scale(1,0);
+    -ms-transform: scale(1,0);
+    transform: scale(1,0);
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text:hover h4{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0px,0);
+    -moz-transform: translate3d(0,0px,0);
+    -o-transform: translate3d(0,0px,0);
+    -ms-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0);
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text:hover p{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0px,0);
+    -moz-transform: translate3d(0,0px,0);
+    -o-transform: translate3d(0,0px,0);
+    -ms-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0); 
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text:hover::before{
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1); 
+    -o-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+}
+.search-body .sear-content .sear-container .media-left .media-left-img .media-left-img-text:hover::after{
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1); 
+    -o-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+}
+/*搜索标签*/
+.title{
+    position: absolute;
+    /*top: 55px;*/
+    top: -30px;
+    left: 92px;
+    z-index: 1;
+    -webkit-transition: all 0.35s,-webkit-transform 0.35s;	
+    -moz-transition: all 0.35s, -moz-transform 0.35s;
+    -o-transition: all 0.35s, -o-transform 0.35s;
+    -ms-transition: all 0.35s, -ms-transform 0.35s;
+    transition: all 0.35s, transform 0.35s;
+}
+.title .title-p{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+}
+.title .title-p>p{
+    font-size: 1.3em;
+}
+.title .title-p>strong{
+    font-size: 1.5em;
+}
+.title .title-p .angle-double-down{
+    margin-top: 20px;
+}
+.pager li{
+    font-weight: 900;
+}
+/*隐藏样式*/
+.visibility-hidden{
+    visibility: hidden;
+}
+
+@media (min-width: 1341px) {
+}
+/* lg */ 
+@media (min-width: 1200px) and (max-width: 1340px) {
+    
+}
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+@media (max-width: 991px) {
+    .search-body .sear-content .container .sear-container .media-left .media-left-img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .search-body .sear-content .container .sear-container .media-left{
+        display: block;
+    }
+}
+@media(max-width:580px){
+    .search-body .sear-content .container .sear-container .media-left .media-left-img{
+        height: 200px;
+        width: 290px; 
+    }
+}
+@media(max-width:480px){
+    .search-body .sear-content .container .sear-container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .search-body .sear-content .container .sear-container .media-left .media-left-img{
+        height: 120px;
+        width: 210px; 
+    }
+}
+    

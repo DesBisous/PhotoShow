@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="ThemeBucket">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>modifyDaren</title>
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/sweetalert.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="index.html"><img src="images/login-logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <img alt="" src="" class="media-object">
+                    <div class="media-body">
+                        <h4><a href="#"></a></h4>
+                        <span>"您好~"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> <span>主页</span></a></li>
+                <li><a href="userMgt.html"><i class="fa fa-book"></i> <span>用户管理</span></a></li>
+                <li class="menu-list"><a href="#"><i class="fa fa-laptop"></i> <span>网站Graph</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="modifyGraph.html"> 更新网站主图</a></li>
+                        <li><a href="modifyDaren.html"> 更新HomeDaren</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="#"><i class="fa fa-cogs"></i> <span>管理FAQ</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="proposal.html"> 处理Proposal</a></li>
+                        <li><a href="comments.html"> 处理Comments</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list nav-active"><a href="#"><i class="fa fa-user"></i> <span>管理员信息</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="person.html"> 个人信息</a></li>
+                        <li class="active"><a href="modifyInformation.html"> 修改信息</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> <span>Login Page</span></a></li>
+            </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+    
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+        <!--toggle button start-->
+        <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+        <!--toggle button end-->
+
+        <!--notification menu start -->
+        <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="proposal.html" class="btn btn-default  info-number" >
+                            <i class="fa fa-bell-o"></i>
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="btn btn-default  info-number" >
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <img src="" alt="" />
+                            <span></span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="person.html"><i class="fa fa-user"></i>  个人信息</a></li>
+                            <li><a href="modifyInformation.html"><i class="fa fa-cog"></i>  修改信息</a></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out"></i> 登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                管理员信息
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    information
+                </li>
+                <li class="active">
+                    modify
+                </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-danger  ">
+                        <div class="panel-heading">
+                            Story
+                            <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                <a href="javascript:;" class="fa fa-times"></a>
+                            </span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-5 text-center">
+                                    <div class="inputImg storyImg">
+                                        <img src="" alt="..." >
+                                        <input type="file" name="imgForm.upload" id="inputImeg" />
+                                    </div>
+                                    <button class="btn btn-info " type="button"> 请附上一张图片 <i class="fa fa-hand-o-up"></i></button>
+                                </div>
+                                <div class="col-md-7">
+                                    <div>
+                                        <div class="well">
+                                            <address>
+                                                <p class="text-center"><strong>请填写需更新的个人信息</strong></p>
+                                                <a>
+                                                    注意:
+                                                </a>
+                                                <br>
+                                                &nbsp;<strong>上传的图片只能是常规的图片格式：BMP、PNG、GIF、JPG、JPEG</strong><br>
+                                                &nbsp;<strong>请您要填写真实信息</strong><br>
+                                                &nbsp;<strong>请您按照下面提示进行填写吧~</strong><br>
+                                            </address>
+                                        </div>
+                                        <blockquote class="pull-right myblockquote" >
+                                            <div class="pull-right-body">
+                                                <div class="form-group">
+                                                    <label for="name"> 昵称</label>
+                                                    <input type="text" id="name"  class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone"> 联系电话</label>
+                                                    <input type="text" id="phone"  class="form-control" placeholder="请填写正确真实联系电话">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email"> 邮箱</label>
+                                                    <input type="text" id="email"  class="form-control" placeholder="请填写有效邮箱">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="address"> 住址</label>
+                                                    <textarea rows="2" id="address" class="form-control" placeholder=""></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd1"> 密码</label>
+                                                    <input type="password" id="pwd1"  class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd2"> 确认密码</label>
+                                                    <input type="password" id="pwd2"  class="form-control" placeholder="密码和确认密码保持一致">
+                                                </div>
+                                            </div>
+                                            <p class="state-overview" >
+                                                <button class="btn red Reset" type="button"> Reset <i class="fa fa-wrench"></i></button>
+                                                <button class="btn purple Submit" type="button" > 提交 <i class="fa fa-hand-o-up"></i></button>
+                                            </p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--body wrapper end-->
+
+    </div>
+    <!-- main content end-->
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/ajaxfileupload.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/jquery.md5.js"></script>
+<script src="js/Top.js"></script>
+<script src="js/modifyInformation.js"></script>
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

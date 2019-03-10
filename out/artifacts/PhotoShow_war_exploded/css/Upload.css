@@ -1,0 +1,81 @@
+.Photo .Upload-left{
+}
+.Photo .Upload-left .Upload-left-icon{
+    
+}
+.Photo .Upload-left .Upload-left-icon>i{
+    border: 1px solid #E5E5E5;
+    background: rgb(241,158,194);
+    border-radius: 50px;
+    padding: 20px;;
+    color: #FFF;
+    margin-top: 20px;
+}
+.Photo .Upload-left-info .text-center{
+        font-size: 1.6em;
+        margin-top: 20px;
+        font-weight: bold;
+}
+.Photo .Upload-left-info .infoBody strong{
+    font-size: 1.3em;
+}
+.Photo .Upload-left-info .infoBody .infoBody-p{
+    line-height: 2em;
+    text-indent: 2em;
+}
+
+.Photo .Upload-right{
+    border-left: 1px solid #E5E5E5;
+}
+.Photo .Upload-right .Upload-right-ul{
+    padding-left:50px;
+    padding-right: 100px;
+}
+.Photo .Upload-right .Upload-right-ul .Upload-right-fashare{
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Photo .Upload-right .Upload-right-ul .Upload-right-fashare strong{
+    font-size: 1.9em;
+}
+.Photo .Upload-right .Upload-right-ul .field_form{
+    font-size: 1.6em;
+}
+.Photo .Upload-right .Upload-right-ul li .threme_radio_lab{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Photo .Upload-right .Upload-right-form{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.Photo .Upload-right .Upload-right-form .form-group{
+    margin-top: 30px;
+}
+.Photo .Upload-right .Upload-right-form .form-group #inputTitle1{
+    width: 50%;
+}
+.Photo .Upload-right .Upload-right-form .form-group #form-Sign{
+    background: rgb(241,158,194);
+    width: 15%;
+    font-weight: bold;
+}
+.Photo .Upload-right .Upload-right-form .form-group #Error1{
+    color: red;
+    font-size: 1em;
+    margin-left: 15px;
+}
+.Photo .Upload-right .Upload-right-form .form-group img{
+    width: 100px;
+    height: 100px;
+    cursor:pointer 
+}
+.Photo .Upload-right .Upload-right-form .form-group input[type="file"]{
+    display: inline-block;
+    visibility: hidden;
+    width: 0;
+}
+.MyDiaplay{
+    display: none;
+}

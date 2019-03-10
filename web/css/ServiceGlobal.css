@@ -1,0 +1,53 @@
+body{
+    background: rgb(242, 234, 218);
+    background-repeat: no-repeat;
+}
+.FAQ .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.FAQ .FAQ-body .FAQ-top{
+    margin-top: 30px;
+    height: 107px;
+}
+.FAQ .FAQ-body .FAQ-top .FAQ-top-span{
+}
+.FAQ .FAQ-body .FAQ-top .FAQ-top-span>i{
+    font-size: 7em;
+}
+.FAQ .FAQ-body .FAQ-top .FAQ-top-h{
+   margin-left: 30px;
+}
+.FAQ .FAQ-body .FAQ-top .FAQ-top-h>h1{
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 29px;
+}
+.FAQ .FAQ-body .FAQ-top-nav li{
+}
+.FAQ .FAQ-body .FAQ-top-nav .nav-pills{
+    background: #3C3C3C;
+    border-color: #eea236;
+    border-radius: 5px;
+}
+.FAQ .FAQ-body .FAQ-top-nav li>a{
+    font-size: 1.4em;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 30px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.FAQ .FAQ-body .FAQ-top-nav li>a:hover{
+    color: #fff;
+    background-color: #337ab7;
+}
+.FAQ .FAQ-body .FAQ-top-nav li>a:focus{
+    outline: none;
+    background-color: #3C3C3C;
+    color: #337ab7;
+}

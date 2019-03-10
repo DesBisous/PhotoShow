@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>Login</title>
+    <!--css-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sweetalert.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <!--js-->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.md5.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/adminLogin.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+</head>
+
+<body class="login-body">
+
+<div class="container">
+
+    <form class="form-signin">
+        <div class="form-signin-heading text-center">
+            <h1 class="sign-title">Sign In</h1>
+            <img src="images/login-logo.png" alt=""/>
+        </div>
+        <div class="login-wrap">
+            <input type="text" class="form-control adminid" placeholder="账号" autofocus>
+            <input type="password" class="form-control passwd" placeholder="密码">
+
+            <button class="btn btn-lg btn-login btn-block goto-admin" type="submit">
+                <i class="fa fa-check"></i>
+            </button>
+
+            <div class="registration">
+                <a class="" href="registration.html">
+                    申请账号
+                </a>
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me"> <a>Remember me</a>
+                <span class="pull-right">
+                    <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
+                </span>
+            </label>
+
+        </div>
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Forgot Password ?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please enter your account number.</p>
+                        <input type="text" id="User" placeholder="User" autocomplete="off" class="form-control placeholder-no-fix">
+                        <p>Please enter your new password.</p>
+                        <input type="password" id="Pwd" placeholder="Password" autocomplete="off" class="form-control placeholder-no-fix">
+                        <button class="btn btn-primary forgetPwd"  type="button">Modify</button>
+                        <p class="back-pwe">State<strong></strong></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-primary" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+    </form>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/global.css" rel="stylesheet" type="text/css"/>
+        <link href="css/headfoot.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/PhotoGalery.css" rel="stylesheet" type="text/css"/>
+        <link href="css/fullscreenstyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/sweetalert.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <header>
+            <div class="tor-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-4">
+                            <div class="top-number">
+                                <p>
+                                    <i class="fade fa-phone-square"></i>  
+                                    <a href="index3.html">Benson</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-8">
+                            <div class="social">
+                                <ul class="social-share">
+                                    <li><a class="login" href="#" data-toggle="modal" id="loginUser" data-target="#login">登录</a></li>
+                                    <li><a class="Mycolse Mydisplay-none" href="index3.html">退出</a></li>
+                                    <li><a class="register" href="register.html">注册</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                </ul>
+                                <div class="search">
+                                    <form role="form">
+                                        <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                        <a href="search.html" id="search-form-a"><i class="fa fa-search"></i></a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="PhotoGallery">
+            <div class="container">
+                <div class="PhotoGallery-contain">
+                    <div class="row PhotoGallery-top">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 PhotoGallery-Name">
+                                <P>相册拥有者：<strong class="userId"></strong></p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 PhotoGallery-Create">
+                                <p><i class="fa fa-refresh fa-spin" aria-hidden="true"></i>创建时间：<strong class="createTime">2016-04-13</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PhotoGallery-title">
+                                <div class="page-header">
+                                    <h1 class="title"><small></small></h1>
+                                    <i class="fa fa-heart fa-2x"><a href="#">Good <span class="badge good">42</span></a></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 PhotoGallery-introduce">
+                                <h1>简介：</h1>
+                                <p class="lead albumIntroduction"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row PhotoGallery-body">
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/1.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/1.jpg" alt="" />-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/2.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/2.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/3.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/3.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/4.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/4.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="clearfix"></div>-->
+                        <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/5.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/5.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/6.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/6.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/7.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/7.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="clearfix"></div>-->
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/8.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/8.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/9.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/9.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/10.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/10.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                            <!--<div class="PhotoGallery-Imag">-->
+                                <!--<a href="images/PhotoGalery/11.jpg" rel="gallery" title="我的家">-->
+                                    <!--<img src="images/PhotoGalery/11.jpg" alt=""/>-->
+                                    <!--<div class="PhotoGallery-Imag-p">-->
+                                        <!--<h4>全屏查看</h4>-->
+                                        <!--<p><i class="fa fa-search-plus" aria-hidden="true" ></i></p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="PhotoGallery-pager">
+                        <nav>
+                          <ul class="pager">
+                            <li><a href="#" class="PreviousAndNext">Previous</a></li>
+                            <li><a style="background-color: #337ab7;color: #FFF;border-radius: 50px;" class="MyPage">1</a></li>
+                            <li><a href="#" class="PreviousAndNext">Next</a></li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+<!--copy right-->
+<div class="copy-rights">
+    <div class="container" >
+		<div class="copy-rights-main">
+                        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</div>
+	</div>
+</div>
+<!--/copy rights-->  
+<!-- login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+        <h4 class="modal-title" id="myModalLabel">Welcome!</h4>
+      </div>
+      <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputUser"><i class="fa fa-user"></i>User</label>
+                <input type="text" class="form-control " id="exampleInputUser" placeholder="User" >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"><i class="fa fa-key"></i>Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!--js-->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/sweetalert.min.js" type="text/javascript"></script>
+        <script src="js/login.js" type="text/javascript"></script>
+        <script src="js/easing.js" type="text/javascript"></script>
+        <script src="js/move-top.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.fullscreenslides.js" type="text/javascript"></script>
+        <script src="js/HomePhotoGallery.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+        <script src="js/jquery.cookie.js" type="text/javascript"></script>
+        <script src="js/outsideSearch.js" type="text/javascript"></script>
+        <script src="js/PhotoGalery.js" type="text/javascript"></script>
+
+        <!--处理点击回到顶部jQuery动画-->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $().UItoTop({ easingType: 'easeOutQuart' });
+                //滚动条美化
+                $("html").niceScroll({
+                    cursorcolor:"#E62020",
+                    cursoropacitymax:1,
+                    touchbehavior:false,
+                    cursorwidth:"7.5px",
+                    cursorheight: "102px",
+                    cursorborder:"0",
+                    cursorborderradius:"5px"
+                });
+            });
+
+        </script>
+    </body>
+</html>

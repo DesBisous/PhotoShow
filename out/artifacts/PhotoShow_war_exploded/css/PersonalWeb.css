@@ -1,0 +1,205 @@
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+    margin: 0;
+    padding: 0;
+/*    background-image: url(../images/PersonalWeb/back.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Nunito-Bold', sans-serif;
+    font-weight: 500;
+    background-color: #3C3C3C;
+}
+.headImg-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/PersonalWeb/banner-bg-about-2.png);
+    /*background: url(../images/PersonalWeb/banner-bg-home.jpg);
+    /*background: url(../images/PersonalWeb/banner-bg-about.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    width: 100%;
+    height: 291px;
+    opacity: 0.9;
+    z-index: -1;
+}
+.headImg .headImg-body .col-lg-3{
+    padding-left: 0px;
+}
+.headImg .headImg-body .col-lg-9{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.headImg .headImg-img{
+    width: 230px;
+    height: 230px;
+}
+.headImg .headImg-img>img{
+    width: 100%;
+    height: 100%;
+}
+.headImg .headImg-body .headImg-info{
+    margin-top: 70px;
+}
+.headImg .headImg-body .link-info{
+    margin-left: 60px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.headImg .headImg-body .headImg-info .media-heading{
+    font-weight: 600;
+}
+.headImg .headImg-body .headImg-info .media-right{
+    padding-bottom: 0;
+}
+.headImg .headImg-body .headImg-info .info-right{
+    padding-top: 130px;
+    padding-right: 70px;
+}
+.headImg .headImg-body .headImg-info .info-right a{
+    background: #A0431B;
+    font-family: 'Kreon', serif;
+    border: #4E2412;
+    border-bottom: 3px solid #4E2412;
+    font-size: 0.96em;
+    font-weight: 600;
+}
+.headImg .headImg-body .headImg-info .info-right a:hover{
+    background: #fba919;
+    text-decoration: none;
+    border-bottom: 3px solid #BA7C10;
+}
+.nar2{
+    margin-top: 2px;
+}
+.nar2 .container{
+    padding: 0;
+    font-size: 1.2em;
+}
+.Photo{
+/*   padding-bottom: 30px;
+    border-bottom: 1px solid #FFF ;*/
+}
+.Photo .container{
+    background: #FFF;
+}
+.Photo .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.Photo .row1{
+    margin-top: 15px;
+}
+.Photo .content-item{
+    padding-right: 0px;
+    padding-left: 0px;
+    min-height: 500px;
+}
+.Photo .content-item .Photo-img{
+    width: 570px;
+    height: 500px;
+}
+.Photo .content-item .Photo-img>img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+.Photo .content-item .Photo-info{
+    padding: 60px 65px;
+     color: #3C3C3C;
+}
+.Photo .content-item .fa-heart{
+    color: rgb(241,158,194);
+    
+}
+.Photo .content-item .fa-heart>a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.Photo .content-item .fa-picture-o{
+    font-weight: bold;
+    font-size: 1.4em;
+    float: right;   
+    margin-top: 40px;
+}
+.Photo .content-item .fa-picture-o>a{
+   text-decoration: none;
+}
+.Photo .content-item .Photo-info>h2{
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.Photo .content-item .Photo-info>p{
+    line-height: 1.6em;
+     text-indent:2em;
+     height: 154px;
+}
+.Photo .nav-item{
+    margin: 20px auto;
+}
+
+
+/*封面封面选择*/
+#myModalLabel{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+#Cover .Cover-divImag{
+    float:left;
+    width: 100px;
+    height: 80px;
+    margin: 0 10px;
+}
+#Cover .Cover-divImag a{
+    width: 100px;
+    height: 80px;
+}
+#Cover .Cover-divImag a>img{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:991px){
+    .headImg-top{
+        min-height: 315px!important;
+    }
+}
+@media(max-width:580px){
+    .headImg .headImg-body .col-lg-3{
+        float:none;
+        clear:both;
+        display: block;
+    }
+    .headImg .headImg-body .col-lg-9{
+        width: 100%;
+    }
+    .headImg .headImg-body .headImg-info{
+        color: #FFF;
+        display: block;
+        padding-left: 30%;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    .headImg .headImg-body .link-info{
+        color: #FFF;
+    }
+}
+@media(max-width:480px){
+    .headImg-top{
+        min-height: 315px!important;
+    }
+}
+@media(max-width:392px){
+    .headImg-top{
+        min-height: 342px!important;
+    }
+    .headImg .headImg-body .link-info{
+        display: block;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,150 @@
+body{
+    background: #191919;
+    font-family: "Nunito-Bold";
+}
+.PhotoGallery .container{
+    background: #FFF;
+    padding-top: 30px;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-Name{
+    text-align: left;
+    color: #f391a9;
+    font-size: 1.5em;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-Name>p{
+    font-weight: 700;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-Create{
+    text-align: right;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-Create>p{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-Create>p>i{
+    margin-right: 5px;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-title .page-header{
+    text-align: center;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-title .page-header>h1{
+    font-size: 5em;
+    font-weight: 900;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-title .page-header>i{
+    color: #f391a9;
+    text-decoration: none;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-title .page-header>i>a{
+    text-decoration: none;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-introduce>h1{
+    font-weight: 700;
+    text-indent: 1em;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-top .PhotoGallery-introduce>p{
+    padding: 10px 15px 15px 15px;
+    text-indent: 1em;
+}
+/*相册图片*/
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body{
+    padding-bottom: 30px;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .col-lg-3,
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .col-lg-4{
+    padding-top: 25px;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag{
+    width: 100%;
+    background: #FFF;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag img{
+    width:  100%!important;
+    height: 100%!important;
+	-webkit-transition: opacity 0.8s,-webkit-transform 0.8s;	
+	-moz-transition: opacity 0.8s, -moz-transform 0.8s;
+	-o-transition: opacity 0.8s, -o-transform 0.8s;
+	-ms-transition: opacity 0.8s, -ms-transform 0.8s;
+	transition: opacity 0.8s, transform 0.8s;
+}
+/*.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag :hover img{
+    opacity: 0.6;
+}*/
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag .PhotoGallery-Imag-p{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag .PhotoGallery-Imag-p h4{
+    padding-top: 25%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translate3d(0,-20px,0);
+    -moz-transform: translate3d(0,-20px,0);
+    -o-transform: translate3d(0,-20px,0);
+    -ms-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+    color: #fff;
+    font-family: "Nunito-Bold";
+    color: #FFF;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag .PhotoGallery-Imag-p p{
+    color: #fff;
+    padding: 0.5em 2.5em;
+    line-height: 1.5em;
+    opacity: 0;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translate3d(0,20px,0);
+    -moz-transform: translate3d(0,20px,0);
+    -o-transform: translate3d(0,20px,0);
+    -ms-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag .PhotoGallery-Imag-p p i{
+        font-size: 1.6em;
+        color: #FFF;
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag .PhotoGallery-Imag-p:hover h4{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0px,0);
+    -moz-transform: translate3d(0,0px,0);
+    -o-transform: translate3d(0,0px,0);
+    -ms-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0);
+}
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-body .PhotoGallery-Imag .PhotoGallery-Imag-p:hover p{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0px,0);
+    -moz-transform: translate3d(0,0px,0);
+    -o-transform: translate3d(0,0px,0);
+    -ms-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0); 
+}
+
+
+
+/*图片结束*/
+.PhotoGallery .container .PhotoGallery-contain .PhotoGallery-pager{
+    margin-bottom: 50px;
+}
+
+/*页脚*/
+.copy-rights{
+    background: #191919;
+    margin-top: 50px;
+}

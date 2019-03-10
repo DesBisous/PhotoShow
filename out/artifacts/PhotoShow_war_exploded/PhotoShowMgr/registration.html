@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>Registration</title>
+    <!--css-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+    <link href="css/sweetalert.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+</head>
+
+<body class="login-body">
+
+<div class="container">
+
+    <form class="form-signin">
+        <div class="form-signin-heading text-center">
+            <h1 class="sign-title">Registration</h1>
+            <img src="images/login-logo.png" alt=""/>
+        </div>
+
+
+        <div class="login-wrap">
+            <p> 请输入您的个人信息</p>
+            <input type="text" autofocus="" placeholder="昵称" class="form-control Name">
+            <input type="text" autofocus="" placeholder="联系电话" class="form-control Phone">
+            <input type="text" autofocus="" placeholder="邮件" class="form-control Email">
+            <input type="text" autofocus="" placeholder="住址" class="form-control Address">
+            <div class="inputImg">
+                <label for="inputImeg" class="col-sm-6 col-xs-6 control-label">上传<br/>头像</label>
+                <div class="col-sm-6 col-xs-6">
+                    <img  src="images/register/PersonIMag.jpg" alt="" class="" />
+                    <input type="file" name="imgForm.upload" id="inputImeg" enctype="multipart/form-data"/>
+                </div>
+            </div>
+
+            <p> 请输入您的用户信息</p>
+            <input type="text" autofocus="" placeholder="账号" class="form-control Adminid">
+            <input type="password" placeholder="密码" class="form-control Pwd1">
+            <input type="password" placeholder="确认密码" class="form-control Pwd2">
+            <label class="checkbox">
+                <input type="checkbox" value="agree this condition"> 我同意解释权归官网所有
+            </label>
+            <button type="submit" class="btn btn-lg btn-login btn-block ">
+                <i class="fa fa-check"></i>
+            </button>
+
+            <div class="registration">
+                前往
+                <a href="login.html" class="">
+                    登录
+                </a>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+<!--js-->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.md5.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/registration.js"></script>
+<script src="js/ajaxfileupload.js"></script>
+
+
+
+
+</body>
+</html>

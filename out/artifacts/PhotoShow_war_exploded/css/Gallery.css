@@ -1,0 +1,308 @@
+body{
+    font-family: "Nunito-Bold";
+    background-color: #222222;
+}
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../images/Gallery/background/bg-homepage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -8;
+}
+.overlay-bg {
+    background-image: url(../images/pattern.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -7;
+}
+/*主题导航*/
+.menu-toggle-btn {
+    width: 100%;
+    height: 60px;
+    background-color: #a71e2b;
+    display: block;
+    color: white;
+    text-align: center;
+}
+.menu-toggle-btn i {
+    line-height: 60px;
+}
+.responsive_menu {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+.responsive-navigation .responsive_menu .main_menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.responsive-navigation .responsive_menu .main_menu li{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #333333;
+}
+.responsive-navigation .responsive_menu .main_menu li:hover a{
+    color:#FFF;
+}
+.responsive-navigation .responsive_menu .main_menu li a{
+    color: #999999;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+}
+.responsive-navigation .responsive_menu .main_menu li a i{
+    margin-right: 15px;
+}
+/*Gallery-content*/
+.Gallery-content{
+    margin-top: 80px;
+}
+.Gallery-content .col-md-2 .main_menu,
+.Gallery-content .col-md-2 .main_menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 50px;
+}
+.Gallery-content .col-md-2 .main_menu ul li{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #333333;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 3px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.Gallery-content .col-md-2 .main_menu ul li a{
+    /*color: #999999;*/
+    display: block;
+    font-size: 18px;
+    width: 70px;
+    height: 70px;
+    /*color: white;*/
+    line-height: 72px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 5px auto 0 auto;
+    -webkit-border-radius: 45px;
+    border-radius: 45px;
+    text-align: center;
+}
+.Gallery-content .col-md-2 .main_menu ul li a:hover{
+    /*color: rgb(241,158,194);*/
+    color: rgb(241,158,194);
+    border: 1px solid rgb(241,158,194);
+}
+.Gallery-content .col-md-2 .main_menu ul li a i{
+    text-align: center;
+    margin: 0 !important;
+    font-size: 24px;
+}
+.Gallery-content .col-md-2 .main_menu ul li a.menu-tip{
+    top: 46px!important;
+    left: 110px!important;
+    position: absolute;
+    height: 10px!important;
+    background: rgba(0, 0, 0, 0.7)!important;
+}
+.Gallery-content .col-md-2 .main_menu ul li .tooltip { 
+    font-size: 14px; 
+    width: 120px; 
+}
+/*Begin Content*/
+.Gallery-content .col-md-10 .templatemo_logo{
+    text-align: center;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.Gallery-content .col-md-10 .templatemo_logo a{
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+}
+.Gallery-content .col-md-10 .templatemo_logo a p{
+    font-size: 60px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+}
+/*Gallery-body*/
+.Gallery-content .col-md-10 .Gallery-body{
+    -webkit-transition: all 0.8s,-webkit-transform 0.8s;	
+    -moz-transition: all 0.8s, -moz-transform 0.8s;
+    -o-transition: all 0.8s, -o-transform 0.8s;
+    -ms-transition: all 0.8s, -ms-transform 0.8s;
+    transition: all 0.8s, transform 0.8s;
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-title{
+    font-size: 1.5em;
+    color: #FFF;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 5%;
+}
+.Gallery-content .col-md-10 .Gallery-body .col-xs-6{
+    padding-bottom: 30px;
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item{
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject{
+    width: 100%;
+    height: 100%;
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject img{
+    width:  100%!important;
+    height: 100%!important;
+	-webkit-transition: opacity 0.8s,-webkit-transform 0.8s;	
+	-moz-transition: opacity 0.8s, -moz-transform 0.8s;
+	-o-transition: opacity 0.8s, -o-transform 0.8s;
+	-ms-transition: opacity 0.8s, -ms-transform 0.8s;
+	transition: opacity 0.8s, transform 0.8s;
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject:hover img{
+    opacity: 0.6;
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject .Gallery-text{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject .Gallery-text h4{
+    padding-top: 37%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translate3d(0,-20px,0);
+    -moz-transform: translate3d(0,-20px,0);
+    -o-transform: translate3d(0,-20px,0);
+    -ms-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+    color: #fff;
+    font-family: "Nunito-Bold";
+    color: #FFF;
+    font-size: 2em;
+    font-weight: 900;
+    -webkit-transition: opacity 0.8s,-webkit-transform 0.8s;	
+    -moz-transition: opacity 0.8s, -moz-transform 0.8s;
+    -o-transition: opacity 0.8s, -o-transform 0.8s;
+    -ms-transition: opacity 0.8s, -ms-transform 0.8s;
+    transition: opacity 0.8s, transform 0.8s;
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject .Gallery-text p{
+    color: #fff;
+    padding: 0.5em 2.5em;
+    line-height: 1.5em;
+    opacity: 0;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    -ms-transition: -ms-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translate3d(0,20px,0);
+    -moz-transform: translate3d(0,20px,0);
+    -o-transform: translate3d(0,20px,0);
+    -ms-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+    -webkit-transition: opacity 0.8s,-webkit-transform 0.8s;	
+    -moz-transition: opacity 0.8s, -moz-transform 0.8s;
+    -o-transition: opacity 0.8s, -o-transform 0.8s;
+    -ms-transition: opacity 0.8s, -ms-transform 0.8s;
+    transition: opacity 0.8s, transform 0.8s; 
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject:hover h4{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0px,0);
+    -moz-transform: translate3d(0,0px,0);
+    -o-transform: translate3d(0,0px,0);
+    -ms-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0);
+}
+.Gallery-content .col-md-10 .Gallery-body .Gallery-item .Gallery-imgObject:hover p{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0px,0);
+    -moz-transform: translate3d(0,0px,0);
+    -o-transform: translate3d(0,0px,0);
+    -ms-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0);  
+}
+/*固定块*/
+.Gallery-fixed{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    top: 250px;
+    left: 1260px;
+}
+.Gallery-fixed .Gallery-fixed-content .Gallery-change{
+    background-color:  rgba(0, 0, 0, 0.7);
+    width: 80px;
+    text-align: center;
+    line-height: 2.3em;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.Gallery-fixed .Gallery-fixed-content .Gallery-change a{
+    color: #FFF;
+    text-decoration: none;
+}
+.Gallery-fixed .Gallery-fixed-content .Gallery-change label{
+    margin-bottom: 0;
+}
+.Gallery-fixed .Gallery-fixed-content .Gallery-change label p{
+    margin-bottom: 0;
+}
+.Gallery-fixed .Gallery-fixed-content .Gallery-panorama{
+    background-color:  rgba(0, 0, 0, 0.7);
+    width: 80px;
+    text-align: center;
+    line-height: 2.3em;
+    border-radius: 20px;
+}
+.Gallery-fixed .Gallery-fixed-content .Gallery-panorama label{
+    color: #FFF;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.Gallery-fixed .Gallery-fixed-content .Gallery-panorama label p{
+    margin-bottom: 0;
+}
+/*隐藏*/
+.disabled-None{
+    display: none;
+}
+@media (max-width: 991px) {
+    .Gallery-content .visible-lg{
+            display: none !important;
+    }
+}

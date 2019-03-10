@@ -1,0 +1,290 @@
+@import url(http://fonts.useso.com/css?family=Raleway:200,500,700,800);
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?rretjt');
+	src:url('../fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?rretjt') format('woff'),
+		url('../fonts/icomoon.ttf?rretjt') format('truetype'),
+		url('../fonts/icomoon.svg?rretjt#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+    background: #3C3C3C;
+}
+
+.reg-jumbotron-hiddle{
+    display: none;
+}
+
+/*reg-body*/
+.reg .reg-body{
+    margin: 50px auto;
+    background: #3C3C3C;
+}
+
+.reg .reg-body .jumbotron{
+    padding-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    min-height: 295px;
+    
+}
+/*reg-head*/
+.reg .reg-body .reg-head .nav a{
+    text-decoration:none; 
+    border: #3C3C3C;
+}
+.reg .reg-body .reg-head .nav a:hover,
+.reg .reg-body .reg-head .nav a:visited{
+    background: #3C3C3C;
+}
+.reg .reg-body .reg-head .nav a:active,
+.reg .reg-body .reg-head .nav a:visited {
+    color: #337ab7;
+}
+/*reg-mid*/
+.reg .reg-mid .jumbotron h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal{
+    margin-top: 50px;
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal .form-group{
+    margin-bottom: 30px;
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal .form-group img{
+    width: 200px;
+    height: 200px;
+    cursor:pointer 
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal .form-group input{
+        width: 70%;
+        display: inline-block;
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal .form-group input[type="file"]{
+    display: inline-block;
+    visibility: hidden;
+    width: 0;
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal .form-group .input-tip{
+    font-size:1.5em;
+    margin-left: 10px;
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal .form-group a{
+    visibility: hidden;
+}
+.reg .reg-mid .reg-jumbotron2 .form-horizontal .form-group button{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    font-weight: bold;
+}
+.reg .reg-mid .reg-jumbotron3 .reg-info .reg-info-i{
+    text-align: center;
+}
+.reg .reg-mid .reg-jumbotron3 .reg-info .reg-info-i i{
+    font-size: 10em;
+    margin-top: 60px;
+    color: #5cb85c;
+}
+.reg .reg-mid .reg-jumbotron3 .reg-info .reg-info-p{
+    text-align: center;
+    font-weight: 900;
+    margin: 30px auto;
+    margin-bottom: 100px;
+}
+.reg .reg-mid .reg-jumbotron3 .reg-info .reg-info-p p{
+    font-weight: 900;
+    font-size: 4.5em;
+}
+/*reg-font*/
+.reg-font .reg-button{
+    text-align: right;
+    padding: 0 10%;
+}
+.reg .reg-body .reg-head .nav .active>a{
+    border: 1px solid #eee;
+    background-color: #eee;
+}
+.reg .reg-body .reg-radio{
+    text-align: center;
+}
+
+
+/*协议单选按钮样式start*/
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Reset */
+.reg-radio *,
+.reg-radio *:after,
+.reg-radio *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.reg-radio .clearfix:before,
+.reg-radio .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.reg-radio .clearfix:after {
+	clear: both;
+}
+
+.reg-radio body{
+	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+.reg-radio a{color: #2fa0ec;text-decoration: none;outline: none;}
+.reg-radio a:hover,a:focus{color:#74777b;}
+
+.reg-radio .htmleaf-container{
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.reg-radio .htmleaf-content {
+	font-size: 150%;
+	padding: 1em 0;
+}
+
+.reg-radio .htmleaf-content h2 {
+	margin: 0 0 2em;
+	opacity: 0.1;
+}
+
+.reg-radio .htmleaf-content p {
+	margin: 1em 0;
+	padding: 5em 0 0 0;
+	font-size: 0.65em;
+}
+
+
+.reg-radio .radioGroup {
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.reg-radio .radioGroup > legend {
+  color: #79EAC5;
+}
+.reg-radio .radioGroup label {
+  position: relative;
+  padding-left: 1.3em;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.reg-radio .radioGroup label:hover {
+  color: #FFF;
+}
+.reg-radio .radioGroup label::before, .radioGroup label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+.reg-radio .radioGroup label::before {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25), 0 2px 5px 6px rgba(0, 0, 0, 0.5) inset;
+}
+.reg-radio .radioGroup label::after {
+  background: #79EAC5;
+  opacity: .2;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.reg-radio .radioGroup label:hover::after {
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.reg-radio .radioGroup input {
+  position: absolute;
+  left: -24px;
+  z-index: -1;
+  opacity: 0;
+}
+.reg-radio .radioGroup input:checked + label::after {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  box-shadow: 0 0 15px -1px #79EAC5;
+}
+
+    
+.reg-radio {
+  height: 100%;
+  text-align: center;
+  font: 1.5em 'Roboto Condensed', arial;
+}
+
+.reg-radio fieldset {
+  display: inline-block;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0px 60px 20px;
+  border: 4px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 -160px 50px -80px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+.reg-radio fieldset:focus {
+  border-color: rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+.reg-radio legend {
+  padding: 0 20px;
+  dislpay: inline-block;
+  text-transform: uppercase;
+}
+
+.reg-radio fieldset label {
+  margin: 0 20px;
+}
+/*协议单选按钮样式end*/
+@media(max-width:767px){
+    .container .jumbotron, .container-fluid .jumbotron{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}

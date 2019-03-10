@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BensonHome</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Slicebox - 3D Image Slider with Fallback"/>
+    <meta name="keywords"
+          content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic"/>
+    <meta name="author" content="Pedro Botelho for Codrops"/>
+
+    <!--css-->
+    <link href="css/headfoot.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Head.css" rel="stylesheet" type="text/css"/>
+    <link href="css/global.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/music.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sweetalert.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<header>
+    <div class="tor-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-4">
+                    <div class="top-number">
+                        <p>
+                            <i class="fade fa-phone-square"></i>
+                            <a href="index3.html">Benson</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-8">
+                    <div class="social">
+                        <ul class="social-share">
+                            <li><a class="login" href="#" data-toggle="modal" id="loginUser" data-target="#login">登录</a>
+                            </li>
+                            <li><a class="Mycolse Mydisplay-none" href="#">退出</a></li>
+                            <li><a class="register" href="register.html">注册</a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                        <div class="search">
+                            <form role="form">
+                                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                <a href="search.html" id="search-form-a"><i class="fa fa-search"></i></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse" id="navbar2">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse"
+                        id="nav-button1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index3.html">
+                    <div class="navbar-brand-logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index3.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="javascript:void(0);" id="personalWeb">PersonalWeb</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">CustomerService<i
+                                class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="FAQPlatform.html">关于网站</a></li>
+                            <li><a href="SuggestionBox.html">意见箱</a></li>
+                            <li><a href="MyServiceRecord1.html" id="MyServiceRecord">我的服务记录</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" href="#My_music">
+                            <!-- Music -->
+                            Music
+                        </a>
+                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+                             aria-labelledby="mySmallModalLabel" id="My_music">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Listen to music</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="music-player">
+                                            <div class="info">
+                                                <div class="left">
+                                                    <a href="javascript:;" class="icon-shuffle"></a>
+                                                    <a href="javascript:;" class="icon-heart"></a>
+                                                </div>
+                                                <div class="center">
+                                                    <div class="jp-playlist">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <a href="javascript:;" class="icon-repeat"></a>
+                                                    <a href="javascript:;" class="icon-share"></a>
+                                                </div>
+
+                                                <div class="progress jp-seek-bar">
+                                                    <span class="jp-play-bar" style="width: 0%"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="controls">
+                                                <div class="current jp-current-time">00:00</div>
+                                                <div class="play-controls">
+                                                    <a href="javascript:;" class="icon-previous jp-previous"
+                                                       title="previous"></a>
+                                                    <a href="javascript:;" class="icon-play jp-play" title="play"></a>
+                                                    <a href="javascript:;" class="icon-pause jp-pause"
+                                                       title="pause"></a>
+                                                    <a href="javascript:;" class="icon-next jp-next" title="next"></a>
+                                                </div>
+                                                <div class="volume-level jp-volume-bar">
+                                                    <span class="jp-volume-bar-value" style="width: 0%"></span>
+                                                    <a href="javascript:;" class="icon-volume-up jp-volume-max"
+                                                       title="max volume"></a>
+                                                    <a href="javascript:;" class="icon-volume-down jp-mute"
+                                                       title="mute"></a>
+                                                </div>
+                                            </div>
+                                            <div id="jquery_jplayer" class="jp-jplayer"></div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--图片轮状-->
+<center class="Mycenter">
+    <section id="rt-showcase-surround">
+        <div id="rt-showcase" class="slider-container rt-overlay-dark">
+            <div class="rt-container slider-container">
+                <div class="rt-grid-12 rt-alpha rt-omega">
+
+                    <div class="csslider1 autoplay">
+                        <input name="cs_anchor1" autocomplete="off" id="cs_slide1_0" type="radio"
+                               class="cs_anchor slide">
+                        <input name="cs_anchor1" autocomplete="off" id="cs_slide1_1" type="radio"
+                               class="cs_anchor slide">
+                        <input name="cs_anchor1" autocomplete="off" id="cs_slide1_2" type="radio"
+                               class="cs_anchor slide">
+                        <input name="cs_anchor1" autocomplete="off" id="cs_play1" type="radio" class="cs_anchor"
+                               checked>
+                        <input name="cs_anchor1" autocomplete="off" id="cs_pause1" type="radio" class="cs_anchor">
+                        <ul>
+                            <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+                                <img src="images/index/walle.jpg" style="width: 100%;">
+                            </div>
+                            <li class="num0 img">
+                                <img src="images/index/walle.jpg" alt="Clouds" title="Clouds"/>
+                            </li>
+                            <li class="num1 img">
+                                <img src="images/index/toystory.jpg" alt="Typewriter" title="Typewriter"/>
+                            </li>
+                            <li class="num2 img">
+                                <img src="images/index/nemo.jpg" alt="Bicycle" title="Bicycle"/>
+                            </li>
+
+                        </ul>
+                        <div class="cs_description">
+                            <label class="num0">
+                                <span class="cs_title"><span class="cs_wrapper">Clouds</span></span>
+
+                            </label>
+                            <label class="num1">
+                                <span class="cs_title"><span class="cs_wrapper">Typewriter</span></span>
+
+                            </label>
+                            <label class="num2">
+                                <span class="cs_title"><span class="cs_wrapper">Bicycle</span></span>
+
+                            </label>
+                        </div>
+
+                        <div class="cs_arrowprev">
+                            <label class="num0" for="cs_slide1_0"></label>
+                            <label class="num1" for="cs_slide1_1"></label>
+                            <label class="num2" for="cs_slide1_2"></label>
+                        </div>
+                        <div class="cs_arrownext">
+                            <label class="num0" for="cs_slide1_0"></label>
+                            <label class="num1" for="cs_slide1_1"></label>
+                            <label class="num2" for="cs_slide1_2"></label>
+                        </div>
+
+                        <div class="cs_bullets">
+                            <label class="num0" for="cs_slide1_0">
+                                <span class="cs_point"></span>
+                                <span class="cs_thumb"><img src="images/index/small/walle.jpg" alt="Clouds"
+                                                            title="Clouds"/></span>
+                            </label>
+                            <label class="num1" for="cs_slide1_1">
+                                <span class="cs_point"></span>
+                                <span class="cs_thumb"><img src="images/index/small/toystory.jpg" alt="Typewriter"
+                                                            title="Typewriter"/></span>
+                            </label>
+                            <label class="num2" for="cs_slide1_2">
+                                <span class="cs_point"></span>
+                                <span class="cs_thumb"><img src="images/index/small/nemo.jpg" alt="Bicycle"
+                                                            title="Bicycle"/></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>        <!-- /slider -->
+</center>
+
+<div class="HomeMedia">
+    <div class="container">
+        <div class="HomeMedia-child">
+            <div class="col-lg-12 col-md-12 col-sm-12 HomeMedia-child-1">
+                <h3>beanson home </h3>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 HomeMedia-child-2">
+                <div class="media">
+                    <div class="media-child">
+                        <a class="pull-left" href="#">
+                            <img class="img1"  src="" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body wenzhi1">
+                        <h3>标题:<a></a></h3>
+                        <h4 class="media-heading"></h4>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 HomeMedia-child-2">
+                <div class="media">
+                    <div class="media-child">
+                        <a class="pull-left" href="#">
+                            <img class="img2" src="" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body wenzhi2">
+                        <h3>标题:<a></a></h3>
+                        <h4 class="media-heading"></h4>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <br/><br/>
+    </div>
+</div>
+
+<!--gallery start here-->
+<div class="gallery" id="gallery">
+    <div class="container">
+        <div class="gallery-main">
+            <div class="gallery-top">
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery-bott">
+            </div>
+        </div>
+    </div>
+</div>
+<!--gallery end here-->
+
+<!--New Home-->
+<div class="NewHome">
+    <div class="container">
+        <div class="NewHome-grids">
+            <div class="col-md-6 NewHome-grid">
+                <h3>NewHome<span> !</span></h3>
+                <div class="NewHome1">
+                    <p><a>Lorem ipsum dolor sit amet consectetur</a> <label>( 2010-10-09 )</label>
+                    <div class="clearfix"></div>
+                    </p>
+                    <p><a>Nam libero tempore, cum soluta nobis</a> <label>( 2011-03-04 )</label>
+                    <div class="clearfix"></div>
+                    </p>
+                    <p><a>Lorem Ipsum, you need to be sure there</a> <label>( 2009-06-15 )</label>
+                    <div class="clearfix"></div>
+                    </p>
+                    <p><a>Nam libero tempore, cum soluta nobis</a><label>( 2011-11-18 )</label>
+                    <div class="clearfix"></div>
+                    </p>
+                    <p><a>Lorem ipsum dolor sit amet consectetur</a><label>( 2014-01-21 )</label>
+                    <div class="clearfix"></div>
+                    </p>
+                    <p><a>libero tempore, cum soluta nobis Nam </a><label>( 2011-10-02 )</label>
+                    <div class="clearfix"></div>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 NewHome-grid">
+                <h3>HomeType<span> !</span></h3>
+                <div class="NewHome2">
+                    <h4>America</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active america"
+                             role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                             style="width: 40%">
+                            40%
+                        </div>
+                    </div>
+                    <h4>China</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active china" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            20%
+                        </div>
+                    </div>
+                    <h4>Britain</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active britain"
+                             role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                             style="width: 60%">
+                            60%
+                        </div>
+                    </div>
+                    <h4>Australia</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active australia"
+                             role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                             style="width: 80%">
+                            80%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--end NewHome-->
+
+<div class="DrowHome">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 DrowHome-col">
+            <div class="DrowHome-child">
+                <img src="" alt=""/>
+                <div>
+                    <p>
+                        <strong><i class="fa fa-heart"></i>美好生活！</strong>
+                        <span>  让家庭的幸福的数字上升</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Present">
+    <div class="row Present-middle1">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <i class="fa fa-caret-down"></i>
+        </div>
+    </div>
+    <div class="row Present-middle2">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Present-child1"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Present-child2">
+            <span class="span-Huo1">生</span>
+            <span class="span-Huo2">活</span><i class="fa fa-users"></i>
+            <p><i class="fa fa-star fa-spin"></i>达人</p>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Present-child3"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row Present-middle3">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Present-child4">
+            <div class="Present-img">
+                <img src="images/index/Present2.png" alt="" class="img-thumbnail"/>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Present-child5">
+            <div class="Present-name">
+                <hr class="Present-hr1"/>
+                <div class="Present-div1"></div>
+                <div class="Present-div2"></div>
+                <div class="Present-div3">
+                    <strong class="Present-strong2"></strong>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Present-child6">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="Present-spokesman1">
+                    <i class="fa fa-caret-right"></i>
+                </div>
+                <div class="Present-spokesman2">
+                    介绍<i class="fa fa-caret-right"></i>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="Present-spokesman3">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="Present-spokesman4">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div style="margin-top: 25px;">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Present-child4">
+                <div class="Present-img">
+                    <img src="images/index/Present1.png" alt="" class="img-thumbnail"/>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Present-child5">
+                <div class="Present-name">
+                    <hr class="Present-hr1"/>
+                    <div class="Present-div1"></div>
+                    <div class="Present-div2"></div>
+                    <div class="Present-div3">
+                        <strong class="Present-strong2"></strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Present-child6">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <div class="Present-spokesman1">
+                        <i class="fa fa-caret-right"></i>
+                    </div>
+                    <div class="Present-spokesman2">
+                        介绍<i class="fa fa-caret-right"></i>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <div class="Present-spokesman3">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="Present-spokesman4">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!--footer start here-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <h3>Delivery advice</h3>
+            <p>本站搜索</p>
+            <form>
+                <input type="text" value="" onfocus="this.value = '';"
+                       onblur="if (this.value == '') {this.value = '请输入...';}">
+                <a id="WebSearch">Subscribe</a>
+            </form>
+        </div>
+    </div>
+</div>
+<!--footer end here-->
+<!--copy right-->
+<div class="copy-rights">
+    <div class="container">
+        <div class="copy-rights-main">
+            <p>Benson to creation<a target="_blank" href="#"> ...Happy</a></p>
+            <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div>
+    </div>
+</div>
+<!--/copy rights-->
+<!-- login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+                        class="fa fa-times"></i></span></button>
+                <h4 class="modal-title" id="myModalLabel2">Welcome!</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputUser"><i class="fa fa-user"></i>User</label>
+                        <input type="text" class="form-control " id="exampleInputUser" placeholder="User">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"><i class="fa fa-key"></i>Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--     js -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<script src="js/home.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/move-top.js" type="text/javascript"></script>
+<script src="js/easing.js" type="text/javascript"></script>
+<script src="js/jquery.jplayer.min.js" type="text/javascript"></script>
+<script src="js/jplayer.playlist.min.js" type="text/javascript"></script>
+<script src="js/music.js" type="text/javascript"></script>
+<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+<script src="js/sweetalert.min.js" type="text/javascript"></script>
+<script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/outsideSearch.js" type="text/javascript"></script>
+
+<!--处理点击回到顶部jQuery动画-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+//滚动条美化
+        $("html").niceScroll({
+            cursorcolor: "#E62020",
+            cursoropacitymax: 1,
+            touchbehavior: false,
+            cursorwidth: "7.5px",
+            cursorheight: "102px",
+            cursorborder: "0",
+            cursorborderradius: "5px"
+        });
+    });
+</script>
+</body>
+</html>

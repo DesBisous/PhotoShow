@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Nunito-Bold';
+    src:url(../fonts/Nunito-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: '汉仪太极体简';
+    src:url(../fonts/汉仪太极体简.ttf) format('truetype');
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: '汉仪太极体简';
+}
+#navbar2 .modal-content{
+    text-align: center;
+}
+#navbar2 .modal-sm{
+    width: 480px;
+}
+#login{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#login .modal-dialog{
+    width: 480px;
+}
+#login .modal-dialog label{
+    font-size: 1.8em;
+    color: #FFF;
+}
+#login .modal-content .modal-title{
+    text-align: center;
+    font-size: 2.3em;
+}
+#login .modal-content .close{
+    color: #FFF;
+}
+#login .modal-content{
+    background: #3C3C3C;
+    color: #FFF;
+}
+#login .modal-content .modal-body .form-group{
+    margin-bottom: 20px;
+}
+#login .modal-content .modal-body .fa{
+    margin-right: 10px;
+}
+.Mydisplay-none{
+    display: none!important;
+}
+@media (min-width: 1341px) {
+      #navbar2 .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      transition:fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }
+}
+/* lg */
+@media (min-width: 1200px) and (max-width: 1340px) {
+    #navbar2 .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      transition:fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }
+}
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+#navbar2 .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }    
+.navbar-nav > li {
+    margin-left: 10px;
+  }
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+#navbar2 .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }        
+}
+/* md */
+@media (min-width: 812px) and (max-width: 991px) {
+ #navbar2 .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }    
+.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+#navbar2 .navbar-nav>li{
+      margin: 0;
+}
+}
+@media (min-width: 768px) and (max-width: 811px) {
+#navbar2 .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }    
+.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+#navbar2 .navbar-nav>li{
+      margin: 0;
+}    
+}
+/* xs */
+@media (max-width: 767px) {
+#navbar2 .container > .navbar-header, #navbar2 .container > .navbar-collapse{
+    margin-left: 0;
+  }
+ #navbar2 .container > .navbar-header .navbar-brand{
+     width: 105px;
+  }
+.navbar-nav > li {
+    padding-bottom: 0;
+  }
+.nav-tabs > li.active > a:after{
+    display: none;
+  }   
+}
