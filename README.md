@@ -1,6 +1,7 @@
 # PhotoShow 基于S2SH、Bootstrap与AJAX的PhotoShow系统
 
-## 系统功能主要分为以下几个主要部分：
+
+### 系统功能主要分为以下几个主要部分：
 
 PhotoShow系统顾名思义是一个立志于提供一个用户照片共享的网站平台，通过该平台将用户的上传的照片集中一起进行分享。
 
@@ -14,3 +15,9 @@ PhotoShow系统顾名思义是一个立志于提供一个用户照片共享的�
   4)	对网站相册信息，用户信息等基本信息的查看。<br>
   5)	对网站用户的账号管理。<br>
   6)	对网站信息和公告的维护和更新。<br>
+
+### 案例
+
+![image](https://raw.githubusercontent.com/DesBisous/PhotoShow/master/image/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.jpg)
+<br>
+![image](https://raw.githubusercontent.com/DesBisous/PhotoShow/master/image/%E7%AE%A1%E7%90%86%E5%91%98%E4%B8%BB%E9%A1%B5.jpg)
